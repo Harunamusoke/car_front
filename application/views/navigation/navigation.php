@@ -102,6 +102,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </a>
                 </li>
 
+                <li class="">
+                    <a href="<?php echo base_url("rates"); ?>" class="">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="nav-text"> RATES </span>
+                    </a>
+                </li>
+
             </ul>
         </div>
     </div>

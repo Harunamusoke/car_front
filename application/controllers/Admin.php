@@ -24,8 +24,8 @@ class Admin extends CI_Controller
         try {
             $result = $this->check_end_point($this->config->item("get_users"));
         } catch (Exception $ex) {
-            http_response_code(500);
-            return "Failed due to " . $ex->getMessage();
+            show_404();
+            exit;
         }
         if (isset($result[0]))
             $data['keys'] = array_keys($result[0]);
@@ -53,9 +53,8 @@ class Admin extends CI_Controller
         try {
             $result = $this->check_end_point($this->config->item("get_vehicles"));
         } catch (Exception $ex) {
-            http_response_code(500);
-            echo "Failed due to : <b> " . $ex->getMessage() . "</b>";
-            return;
+            show_404();
+            exit;
         }
 
         // tabulate datatable
