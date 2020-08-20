@@ -83,6 +83,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
             </div>
             </form>
+        <?php else : ?>
+
+            <div class="col-5 col-md-4 my-0 p-0">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#activateUser">
+                    ACTIVATE
+                </button>
+            </div>
+
         <?php endif; ?>
         <div class="col-3 p-md-0 d-none d-lg-block ml-auto">
             <ol class="breadcrumb">
@@ -139,3 +147,45 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
 
 </div>
+<?php if ($isVehicles === FALSE) :  ?>
+    <!-- Modal -->
+    <div class="modal fade" id="activateUser" tabindex="-1" role="dialog" aria-labelledby="activateUserLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="activateUserLabel">ACTIVATE USER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="<?php echo base_url("admin/activate"); ?>" method="get">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="user_id">USER ID</label>
+                            <input id="user_id" class="form-control" type="number" required name="user_id">
+                        </div>
+
+                        <div class="row px-3">
+
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input id="acivate" class="custom-control-input" type="radio" name="status" value="1" checked>
+                                <label for="acivate" class="custom-control-label">ACTIVATE</label>
+                            </div>
+
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input id="deactivate" class="custom-control-input" type="radio" name="status" value="0">
+                                <label for="deactivate" class="custom-control-label">DEACTIVATE</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

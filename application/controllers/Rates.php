@@ -7,6 +7,8 @@ class Rates extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if (!$this->session->has_userdata("user"))
+            redirect("auth/login");
     }
 
     public function index()

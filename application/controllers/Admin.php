@@ -90,6 +90,26 @@ class Admin extends CI_Controller
         redirect("admin/vehicles?" . HttpClient::formPost($result));
     }
 
+    public function activate()
+    {
+        if (!isset($_GET['user_id']))
+            redirect('admin/users', "auto");
+
+        $id = $this->input->get("user_id");
+        $status = $this->input->get("status");
+
+        $result = "";
+        try {
+            $result = $this->check_end_point($this->config->item("acivate_user") . $id . "/" . $status);
+        } catch (Exception $ex) {
+            show_404();
+            exit;
+        }
+
+        // print_r($result);
+        redirect("admin/users", "refresh");
+    }
+
     private function render($data, $view = null)
     {
         $this->load->view("fragments/header", $data);

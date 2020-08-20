@@ -109,6 +109,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </a>
                 </li>
 
+                <li class="">
+                    <a href="<?php echo base_url("slots"); ?>" class="">
+                        <i class="fa fa-align-right"></i>
+                        <span class="nav-text"> SLOTS </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
