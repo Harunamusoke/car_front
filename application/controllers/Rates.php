@@ -60,6 +60,7 @@ class Rates extends CI_Controller
 
     private function render($data)
     {
+        $data['dashboard'] = true;
         $this->load->view("fragments/header", $data);
         $this->load->view("navigation/navigation");
         // RATE VIEW

@@ -14,6 +14,7 @@ class Dashboard extends CI_Controller
     public function index()
     {
         $data['title'] = "Dashboard";
+        $data['dashboard'] = true;
 
         $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
         $this->output->set_header('Cache-Control: post-check=0, pre-check=0');

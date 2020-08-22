@@ -24,7 +24,7 @@ class Admin extends CI_Controller
         try {
             $result = $this->check_end_point($this->config->item("get_users"));
         } catch (Exception $ex) {
-            show_404();
+            redirect("admin/users", "refresh");
             exit;
         }
         if (isset($result[0]))
@@ -53,7 +53,7 @@ class Admin extends CI_Controller
         try {
             $result = $this->check_end_point($this->config->item("get_vehicles"));
         } catch (Exception $ex) {
-            show_404();
+            redirect("admin/vehicles");
             exit;
         }
 
@@ -102,7 +102,7 @@ class Admin extends CI_Controller
         try {
             $result = $this->check_end_point($this->config->item("acivate_user") . $id . "/" . $status);
         } catch (Exception $ex) {
-            show_404();
+            redirect("admin/users", "refresh");
             exit;
         }
 
@@ -112,6 +112,8 @@ class Admin extends CI_Controller
 
     private function render($data, $view = null)
     {
+        $data['dashboard'] = true;
+
         $this->load->view("fragments/header", $data);
         $this->load->view("navigation/navigation");
         $this->load->view("admin/data_table", $data);

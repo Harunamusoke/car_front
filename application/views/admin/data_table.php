@@ -14,7 +14,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </div>
         <?php if ($isVehicles !== FALSE) : ?>
             <div class="col-5 col-md-4 my-0 p-0">
-                <form action="<?php echo base_url("admin/takeToDate") ?>">
+                <form action="<?php echo base_url("admin/takeToDate"); ?>">
                     <div class="btn-group">
                         <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">BACK IN TIME</button>
                         <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px;
@@ -75,7 +75,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                                 </fieldset>
                                 <button class="dropdown-item btn btn-block btn-primary" type="submit">GO
-                                    <i class="fa fa-search"></i>
+                                    <i class="fa fa-search float-right"></i>
                                 </button>
                             </div>
                         </div>

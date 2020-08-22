@@ -7,65 +7,50 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<div class="row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="card gradient-1">
-					<div class="card-body py-3 text-center">
-						<h3 class="card-title text-white">Vehicles due today</h3>
+					<div class="card-body">
+						<h3 class="card-title gradient-1-text text-center">TOTAL VEHICLES</h3>
 						<div class="d-inline-block">
-							<h2 class="text-white">4565</h2>
-							<p class="text-white mb-0"><?php echo date("Y-m-d") ?></p>
+							<h2 class="gradient-1-text">8541</h2>
 						</div>
-						<span class="float-right display-5 opacity-5">
-							<img src="https://image.flaticon.com/icons/svg/554/554027.svg" alt="">
-							<!-- <i class="fa fa-shopping-cart"></i> -->
-						</span>
-						<nav class="nav flex-row py-0">
-							<li class="nav-item d-flex justify-content-between align-items-center">
-								<img src="https://image.flaticon.com/icons/svg/832/832964.svg" alt="" width="25px">
-								<a class="nav-link active text-success" href="#" id="cleared">
-									6778</a>
-							</li>
-							<li class="nav-item d-flex justify-content-between align-items-center">
-								<a class="nav-link active text-danger" href="#" id="still_in">
-									884</a>
-								<img src="https://image.flaticon.com/icons/svg/832/832974.svg" alt="" width="25px">
-							</li>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6">
-				<div class="card gradient-2">
-					<div class="card-body  text-center">
-						<h3 class="card-title text-whiter">Revenue collected</h3>
-						<div class="d-inline-block">
-							<h2 class="text-white">$ 8541</h2>
-							<p class="text-white mb-0"><?php echo date("Y-m-d"); ?></p>
-						</div>
-						<span class="float-right display-5 opacity-5">
+						<span class="float-right display-4 opacity-5">
 							<i class="fa fa-money"></i></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
-				<div class="card gradient-3">
+				<div class="card gradient-1">
 					<div class="card-body">
-						<h3 class="card-title text-white text-center">New Customers</h3>
+						<h3 class="card-title gradient-1-text text-center">TOTAL REVENUE</h3>
 						<div class="d-inline-block">
-							<h2 class="text-white">4565</h2>
-							<p class="text-white mb-0"><?php echo date("Y-m-d"); ?></p>
+							<h2 class="gradient-1-text">8541</h2>
 						</div>
-						<span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+						<span class="float-right display-4 opacity-5">
+							<i class="fa fa-money"></i></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
-				<div class="card gradient-4">
+				<div class="card gradient-1">
 					<div class="card-body">
-						<h3 class="card-title text-white text-center">Customer Satisfaction</h3>
-						<div class="d-inline-block">
-							<h2 class="text-white">99%</h2>
-							<p class="text-white mb-0">Jan - March 2019</p>
+						<h3 class="card-title gradient-1-text">NEW CUSTOMERS</h3>
+						<div class=" d-inline-block">
+							<h2 class="gradient-1-text">4565</h2>
 						</div>
-						<span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+						<span class="float-right display-4 opacity-5 gradient-1-text"><i class="fa fa-users"></i></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="card gradient-1">
+					<div class="card-body row">
+						<div class="col">
+							<i class="fa fa-paid">IN</i>
+							<strong class="text-lg text-primary" style="font-size : 2rem;">2450</strong>
+						</div>
+						<div class="col">
+							<i class="fa fa-not-paid">OUT</i>
+							<strong class="text-lg text-danger" style="font-size : 2rem;">3400</strong>
+						</div>
 					</div>
 				</div>
 			</div>

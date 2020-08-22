@@ -1,3 +1,17 @@
 body {
 	font-family: 'Lato', sans-serif, Arial, Helvetica, sans-serif !important;
 }
+
+.nav-header {
+	background-color: #ffffff !important
+}
+
+.label.gradient-1.rounded {
+	background-color: blue !important;
+
+}
+
+.label.gradient-2.rounded {
+	background-color: red !important;
+
+}

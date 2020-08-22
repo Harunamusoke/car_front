@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <div id="main-wrapper">
 
-    <div class="nav-header" style="position :fixed;">
+    <div class="nav-header" style="position :fixed; background-color : white;">
         <div class="brand-logo w-100">
             <a href="<?php echo base_url(""); ?>" class="m-auto d-md-flex">
                 <img src="https://image.flaticon.com/icons/svg/708/708949.svg" class="img-fluid mx-auto" alt="" width="50px" height="50px">
@@ -48,22 +48,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
                             <div class="dropdown-content-body">
                                 <ul>
-                                    <li>
-                                        <a href="app-profile.html"><i class="fa fa-user"></i>
-                                            <span>Profile</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()">
-                                            <i class="fa fa-folder-open"></i> <span>Inbox</span>
-                                            <div class="badge gradient-3 badge-pill gradient-1">3</div>
-                                        </a>
-                                    </li>
-
                                     <hr class="my-2">
-                                    <li>
-                                        <a href="page-lock.html"><i class="fa fa-star-half"></i> <span>Lock
-                                                Screen</span></a>
-                                    </li>
                                     <li><a href="<?php echo base_url("auth/logout"); ?>"><i class="fa fa-window-close"></i> <span>Logout</span></a>
                                     </li>
                                 </ul>
@@ -109,12 +94,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </a>
                 </li>
 
-                <li class="">
-                    <a href="<?php echo base_url("slots"); ?>" class="">
-                        <i class="fa fa-align-right"></i>
-                        <span class="nav-text"> SLOTS </span>
-                    </a>
-                </li>
             </ul>
         </div>
     </div>

@@ -34,9 +34,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="card-title">
-                            <h4>Table Striped</h4>
-                        </div>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
