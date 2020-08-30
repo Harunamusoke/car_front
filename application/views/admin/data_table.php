@@ -33,12 +33,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     </label>
                                 </span>
                                 <span class="dropdown-item">
-                                    <label for="lF">
-                                        <input type="radio" name="date_from" id="lF" value="last two weeks">
-                                        LAST FORTNITE
-                                    </label>
-                                </span>
-                                <span class="dropdown-item">
                                     <label for="lM">
                                         <input type="radio" name="date_from" id="lM" value="last month">
                                         LAST MONTH
@@ -46,7 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </span>
                             </fieldset>
                             <div data-toggle="dropdown" class="m-0 p-0" data-target="allDropDown">
-                                <button class="dropdown-item btn btn-primary text-sm">CHANGE THE STATUS TO CONTINUE</button>
+                                <button class="dropdown-item btn btn-primary text-sm text-center">GO</button>
                             </div>
                         </div>
 
@@ -143,6 +137,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
+
+            <?php if ($isVehicles) : ?>
+
+                <div class="col">
+                    <div class="mx-auto mb-2">
+                        <a class="btn btn-primary" href="<?php echo current_url("?page=next"); ?>"> NEXT >> </a>
+                        <a class="btn btn-primary" href="<?php echo current_url("?page=prev"); ?>"> PREVIOUS >> </a>
+                    </div>
+                </div>
+
+            <?php endif; ?>
+
         </div>
     </div>
 

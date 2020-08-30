@@ -6,3 +6,4 @@ $config['get_users'] = "http://localhost/car_park/api/users";
 $config['get_rates'] = "http://localhost/car_park/api/rates";
 $config['get_slots'] = "http://localhost/car_park/api/slots";
 $config['acivate_user'] = "http://localhost/car_park/api/users_activate/";
+$config['get_dashboard'] = "http://localhost/car_park/api/dashboard";

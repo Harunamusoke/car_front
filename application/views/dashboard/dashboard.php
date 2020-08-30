@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
+
+
+
 <div class="content-body">
 
 	<div class="container-fluid mt-3">
@@ -10,10 +13,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<div class="card-body">
 						<h3 class="card-title gradient-1-text text-center">TOTAL VEHICLES</h3>
 						<div class="d-inline-block">
-							<h2 class="gradient-1-text">8541</h2>
+							<h2 class="gradient-1-text"><?php echo $details['total_vehicles']; ?></h2>
 						</div>
 						<span class="float-right display-4 opacity-5">
-							<i class="fa fa-money"></i></span>
+							<i class="fa fa-id-card"></i></span>
 					</div>
 				</div>
 			</div>
@@ -22,7 +25,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<div class="card-body">
 						<h3 class="card-title gradient-1-text text-center">TOTAL REVENUE</h3>
 						<div class="d-inline-block">
-							<h2 class="gradient-1-text">8541</h2>
+							<h2 class="gradient-1-text"><?php echo $details['total_revenue']; ?></h2>
 						</div>
 						<span class="float-right display-4 opacity-5">
 							<i class="fa fa-money"></i></span>
@@ -34,9 +37,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<div class="card-body">
 						<h3 class="card-title gradient-1-text">NEW CUSTOMERS</h3>
 						<div class=" d-inline-block">
-							<h2 class="gradient-1-text">4565</h2>
+							<h2 class="gradient-1-text"><?php echo $details['new_vehicles']; ?></h2>
 						</div>
-						<span class="float-right display-4 opacity-5 gradient-1-text"><i class="fa fa-users"></i></span>
+						<span class="float-right display-4 opacity-5 gradient-1-text">
+							<i class="fa fa-users"></i></span>
 					</div>
 				</div>
 			</div>
@@ -44,12 +48,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				<div class="card gradient-1">
 					<div class="card-body row">
 						<div class="col">
-							<i class="fa fa-paid">IN</i>
-							<strong class="text-lg text-primary" style="font-size : 2rem;">2450</strong>
-						</div>
+							<span class="opacity-5">
+								<i class="fa fa-eye fa-lg"></i>
+								<strong class="text-lg text-primary" style="font-size : 1rem;">2450</strong>
+							</span> </div>
 						<div class="col">
-							<i class="fa fa-not-paid">OUT</i>
-							<strong class="text-lg text-danger" style="font-size : 2rem;">3400</strong>
+							<span class="opacity-5">
+								<i class="fa fa-window-close"></i>
+								<strong class="text-lg text-danger" style="font-size : 1rem;">3400</strong>
+							</span>
 						</div>
 					</div>
 				</div>
